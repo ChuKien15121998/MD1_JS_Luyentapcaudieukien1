@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học sinh</title>
+</head>
+<body>
+<script>
+    let kiemtra = +prompt("Nhập điểm bài kiểm tra");
+    let giuaki = +prompt("Nhập điểm bào thi giữa kì");
+    let cuoiki = +prompt("Nhập điểm bài thi cuối kì");
+    let tongket = (kiemtra + giuaki * 2 + cuoiki * 3) / 6;
+    if (tongket >= 8) {
+        alert("Học sinh giỏi");
+    } else if (tongket < 8 && tongket >= 6.5) {
+        alert("Học sinh khá");
+    } else if (tongket >= 4.9 && tongket < 6) {
+        alert("Học sinh trung binh");
+    } else {
+        alert("Học sinh yếu");
+    }
+</script>
+</body>
+</html>
